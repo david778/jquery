@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>geters y seters</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).on('ready',function(){
+            //recuperando el valor html de p
+            var valor = $('#parrafo').html();
+            console.log(valor);
+            //cambiando el valor de html
+            $('#parrafo_cambiado').html('<strong>Este texto en un parrafo que esta establecido por jQuery</strong>');
+
+            //Metodo que permite ASIGNAR  una clase a un elemento html
+            $('#prueba').attr('class','wrapper');
+
+            //metodo get con attr que permite OBTENER el valor del id
+            var id_valor = $('#prueba').attr('id');
+            console.log(id_valor);
+        });
+    </script>
+</head>
+<body>
+    <p id="parrafo">
+        Hola mundo estoy cambiando mi forma de progracion
+    </p>
+    <p id="parrafo_cambiado"></p>
+    <div id="prueba"></div>
+</body>
+</html>
