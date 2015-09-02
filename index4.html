@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addClass,removeClass,toggleClass</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).on('ready', function(){
+
+            //toggleClass()
+            $('#test').on('click', function(){
+                $('#test').toggleClass('testclass');
+            });
+            //addClass()
+            $('#test2').on('click', function(){
+                $('#test2').addClass('test2');
+            });
+            //removeClass()
+            $('#test3').on('click', function(){
+                $('#test3').removeClass('test3');
+            });
+        });
+    </script>
+    <style>
+        .testclass {
+            background-color: #CCCCCC;
+        }
+        .test2 {
+            background-color: #9400d3;
+        }
+        .test3 {
+            background-color: #ff07f5;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">Click on me</div>
+    <div id="test2">Click on me 2</div>
+    <div id="test3" class="test3">Click on me 3</div>
+</body>
+</html>
